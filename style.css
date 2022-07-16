@@ -17,14 +17,14 @@ body {
     background-image: url(./napier.jpeg);
 }
 
-.box0.nav div {
+.nav div {
     height: 4px;
     background-color: brown;
     margin: 5px 0px;
     border-radius: 25px;
 }
 
-.box0.nav {
+.nav {
     display: block;
     margin: 1em 0 0 1em;
 }
@@ -51,8 +51,6 @@ body {
 
 
 body {
-    /* background-color: #7e391b; */
-    /* background-color: #9A2717; */
     font-family: poppins, sans-serif;
 }
 
@@ -64,7 +62,7 @@ body {
 }
 
 
-.box0 {
+.layout {
     background-color: rgb(223, 200, 200);
     height: 450px;
     color: #AA481E;
@@ -73,20 +71,19 @@ body {
 }
 
 .box2 {
-    background-color: rgb(223, 200, 200);
-    height: 200px;
-    color: #AA481E;
+    background-color: white;
+    /* height: 200px; */
     padding: 10px;
     border-radius: 10px;
 }
 
-#main_container .box1,
-.box2,
 .box3 {
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    margin: 20px;
+    /* text-align: center; */
+    margin: 0px;
+    border-radius:10px;
 }
 
 input {
@@ -100,17 +97,15 @@ input {
     background-color: white;
 }
 
-.total {
-    border: 2px solid #AA481E;
-}
 
-/* .container button{
-  background-color: #AA481E;
-  color: white;
-  text-transform: uppercase;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 5px;
-  height: 40px;
-  font-weight: 700; */
+button {
+    background-color: #AA481E;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 40px;
+    font-weight: 700;
+}
