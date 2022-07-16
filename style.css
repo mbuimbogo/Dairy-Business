@@ -1,0 +1,18 @@
+body{
+    /* padding: 0;
+    margin: 0; */
+    color:orangered;
+}
+.header{
+    text-align: center;
+    font-size: 40px;
+    color:brown;
+    background-image: url(./napier.jpeg);
+}
+.main_container{ 
+    /* background-image: url(./fresh2.jpg); */
+    background-size: contain;
+    background-repeat:inherit;
+        /* width: 100%; */
+
+}
