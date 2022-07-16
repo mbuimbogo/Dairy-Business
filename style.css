@@ -75,9 +75,9 @@ body {
     /* height: 200px; */
     padding: 10px;
     border-radius: 10px;
-    background-image: url(./fresh2.jpg);
-    background-size: cover;
-    color: blue;
+    background-image: url(https://previews.123rf.com/images/korpas/korpas1702/korpas170200060/72434072-spilled-milk-spilt-milk-in-a-shape-of-a-cow-.jpg);
+    background-size: contain;
+    color: brown;
 }
 
 .box3 {
