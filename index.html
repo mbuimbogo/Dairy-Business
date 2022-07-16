@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Business</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <h1>Kirima dairies</h1>
+        </div>
+    </section>
+    <section>
+        <div class="main_container">
+            <div class="box1">
+                <h2>Production of milk in Litres</h2>
+                <form id="form">
+                    <div class="shed1">
+                        <h3> Shed A Production</h3>
+                        <input id="num1" type="text" placeholder="Amt. in Litres">
+                    </div>
+                    <div class="shed2">
+                        <h3> Shed B Production</h3>
+                        <input id="num2" type="text" placeholder="Amt. in Litres">
+                    </div>
+                    <div class="shed3">
+                        <h3> Shed C Production</h3>
+                        <input id="num3" type="text" placeholder="Amt. in Litres">
+                    </div>
+                    <div class="shed4">
+                        <h3> Shed D Production</h3>
+                        <input id="num4" type="text" placeholder="Amt. in Litres">
+                    </div>
+                    <div class="total"></div>
+                    <div class="btn_container">
+                        <button type="submit">Get Totals</button>
+                        <h4 id="total"></h4>
+                    </div>
+            </div>
+            <div class="box2">
+                <h2>Amount Accrued in a week</h2>
+                <h5 id="weekly"></h5><br>
+                <h5 id="yearly"></h5>
+            </div>
+            <div class="box1">
+                <h3>Amount Accrued in a leap year</h3>
+                <ul>
+                    <li id="list"></li>
+                </ul>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
