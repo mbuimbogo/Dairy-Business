@@ -1,18 +1,116 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     /* padding: 0;
     margin: 0; */
-    color:orangered;
+    color: orangered;
 }
-.header{
+
+.header {
     text-align: center;
     font-size: 40px;
-    color:brown;
+    color: brown;
     background-image: url(./napier.jpeg);
 }
-.main_container{ 
-    /* background-image: url(./fresh2.jpg); */
-    background-size: contain;
-    background-repeat:inherit;
-        /* width: 100%; */
 
+.box0.nav div {
+    height: 4px;
+    background-color: brown;
+    margin: 5px 0px;
+    border-radius: 25px;
 }
+
+.box0.nav {
+    display: block;
+    margin: 1em 0 0 1em;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.nav:hover div {
+    width: 30px;
+}
+
+#form {
+    display: flexbox;
+}
+
+
+body {
+    /* background-color: #7e391b; */
+    /* background-color: #9A2717; */
+    font-family: poppins, sans-serif;
+}
+
+.main_container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+
+.box0 {
+    background-color: rgb(223, 200, 200);
+    height: 450px;
+    color: #AA481E;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box2 {
+    background-color: rgb(223, 200, 200);
+    height: 200px;
+    color: #AA481E;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#main_container .box1,
+.box2,
+.box3 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+}
+
+input {
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    background-color: white;
+}
+
+.total {
+    border: 2px solid #AA481E;
+}
+
+/* .container button{
+  background-color: #AA481E;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  height: 40px;
+  font-weight: 700; */
