@@ -1,38 +1,22 @@
 
-// catch ids
-const cowHouse1 = document.getElementById("cat1");
-const cowHouse2 = document.getElementById("cat2");
-const cowHouse3 = document.getElementById("cat3");
-const cowHouse4 = document.getElementById("cat4");
-const totalAmount = document.getElementById("total");
-const weeklyIncome = document.getElementById("weekly");
-const yearlyIncome = document.getElementById("yearly");
-const singleMonths = document.getElementById("list");
+function getTotal(){
 
-document.getElementById(form.addEventListener("submit",getTotals));
-document.getElementById(form.addEventListener("submit",weeklyIncome));
-document.getElementById(form.addEventListener("submit",monthlyIncome));
-document.getElementById(form.addEventListener("submit",yearlyIncome));
+       let data = [];
 
-// Total milk amount in litres
-function getTotals() {
-    const final = (cowHouse1.value)+(cowHouse2.value)+(cowHouse3.value)+(cowHouse4.value)
+     data[0] = data["shed1"] = parseInt(document.getElementById("shed1").value);
+     data[1] = data["shed2"] = parseInt(document.getElementById("shed2").value);
+     data[2] = data["shed3"] = parseInt(document.getElementById("shed3").value);
+     data[3] = data["shed4"] = parseInt(document.getElementById("shed4").value);
+
+    let sumData = data.shed1 + data.shed2 + data.shed3 + data.shed4;
+
+    document.getElementById("cat").innerHTML += "<Br>"
+
+    document.getElementById("cat1").innerHTML += "<p>Your production in shed 1 is " + data.shed1 + " litres per day</p>";
+    document.getElementById("cat2").innerHTML += "<p>Your production in shed 2 is " + data.shed2 + " litres per day</p>";
+    document.getElementById("cat3").innerHTML += "<p>Your production in shed 3 is " + data.shed3 + " litres per day</p>";
+    document.getElementById("cat4").innerHTML += "<p>Your production in shed 4 is " + data.shed4 + " litres per day</p>";
+
+    document.getElementById("total").innerHTML += "<p>Your total production per day is " + sumData + " litres per day</p>";
+    
 }
-
-// Listing individual months
-singleMonths.innerHTML=
-        <ul>
-            <li class="list">Income for ${months[0]} is</li>
-            <li class="list">Income for ${months[1]} is</li>
-            <li class="list">Income for ${months[2]} is</li>
-            <li class="list">Income for ${months[3]} is</li>
-            <li class="list">Income for ${months[4]} is</li>
-            <li class="list">Income for ${months[5]} is</li>
-            <li class="list">Income for ${months[6]} is</li>
-            <li class="list">Income for ${months[7]} is</li>
-            <li class="list">Income for ${months[8]} is</li>
-            <li class="list">Income for ${months[9]} is</li>
-            <li class="list">Income for ${months[10]} is</li>
-            <li class="list">Income for ${months[11]} is</li>
-        </ul>
-

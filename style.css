@@ -18,34 +18,6 @@ body {
     padding-top: 20px;
 }
 
-.nav div {
-    height: 4px;
-    background-color: brown;
-    margin: 5px 0px;
-    border-radius: 25px;
-}
-
-.nav {
-    display: block;
-    margin: 1em 0 0 1em;
-}
-
-.one {
-    width: 30px;
-}
-
-.two {
-    width: 20px;
-}
-
-.three {
-    width: 25px;
-}
-
-.nav:hover div {
-    width: 30px;
-}
-
 #form {
     display: flexbox;
 }
@@ -58,8 +30,8 @@ body {
 .main_container {
     display: flex;
     justify-content:space-between;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    /* margin: auto; */
 }
 
 
@@ -75,16 +47,26 @@ body {
     background-size: contain;
     border-radius:10px;
 }
+.box0{
+    margin-left: 400px;
+    margin: 10px;
+    width:400px;
+    border-radius: 10px;
+    background-image:url(https://previews.123rf.com/images/korpas/korpas1702/korpas170200060/72434072-spilled-milk-spilt-milk-in-a-shape-of-a-cow-.jpg) ;
+    background-size: contain;
+    color: #AA481E;
+}
 
 .box2 {
     background-color: white;
-    height: 300px; 
-    padding: 30px;
+    height: 400px; 
+    /* padding: 30px; */
     border-radius: 10px;
     background-image: url(https://previews.123rf.com/images/korpas/korpas1702/korpas170200060/72434072-spilled-milk-spilt-milk-in-a-shape-of-a-cow-.jpg);
     background-size: contain;
     color: brown;
     margin: 10px;
+    margin-left:0px;
 }
 
 .boxxx {
