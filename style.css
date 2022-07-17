@@ -57,7 +57,7 @@ body {
 
 .main_container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     width: 80%;
     margin: auto;
 }
@@ -78,20 +78,19 @@ body {
 
 .box2 {
     background-color: white;
-    height: 200px; 
-    padding: 10px;
+    height: 300px; 
+    padding: 30px;
     border-radius: 10px;
     background-image: url(https://previews.123rf.com/images/korpas/korpas1702/korpas170200060/72434072-spilled-milk-spilt-milk-in-a-shape-of-a-cow-.jpg);
     background-size: contain;
     color: brown;
+    margin: 10px;
 }
 
-.box3 {
+.boxxx {
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    /* text-align: center; */
-    margin: 0px;
+    /* display: flex; */
+    /* justify-content: space-between; */
     border-radius:10px;
     background-image: url(./jelican.jpg);
     background-size: cover;
@@ -102,7 +101,7 @@ input {
     width: 150px;
     height: 35px;
     border: 1px;
-    outline: 0;
+    /* outline: 0; */
     border-radius: 5px;
     margin: 5px;
     color: brown;
@@ -118,5 +117,5 @@ button {
     border-radius: 5px;
     margin-top: 5px;
     height: 40px;
-    font-weight: 700;
+    font-weight: 700; 
 }
