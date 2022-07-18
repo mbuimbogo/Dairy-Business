@@ -18,3 +18,11 @@ function produceReport(){
 
     document.getElementById("outputData").innerHTML += "<p>Your total production per day is " + sumData + " litres per day</p>";
 }
+
+
+function resetPage(){
+
+    document.getElementById("outputData").remove("innerHTML");
+    location.reload();
+
+}
