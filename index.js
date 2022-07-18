@@ -1,22 +1,20 @@
+function produceReport(){
 
-function getTotal(){
+    let data = [];
 
-       let data = [];
+     data[0] = data["shedA"] = parseInt(document.getElementById("shedA").value);
+     data[1] = data["shedB"] = parseInt(document.getElementById("shedB").value);
+     data[2] = data["shedC"] = parseInt(document.getElementById("shedC").value);
+     data[3] = data["shedD"] = parseInt(document.getElementById("shedD").value);
 
-     data[0] = data["shed1"] = parseInt(document.getElementById("shed1").value);
-     data[1] = data["shed2"] = parseInt(document.getElementById("shed2").value);
-     data[2] = data["shed3"] = parseInt(document.getElementById("shed3").value);
-     data[3] = data["shed4"] = parseInt(document.getElementById("shed4").value);
+    let sumData = data.shedA + data.shedB + data.shedC + data.shedD;
 
-    let sumData = data.shed1 + data.shed2 + data.shed3 + data.shed4;
+    document.getElementById("outputData").innerHTML += "<Br>"
 
-    document.getElementById("cat").innerHTML += "<Br>"
+    document.getElementById("outputData").innerHTML += "<p>Your production in shed A is " + data.shedA + " litres per day</p>";
+    document.getElementById("outputData").innerHTML += "<p>Your production in shed B is " + data.shedB + " litres per day</p>";
+    document.getElementById("outputData").innerHTML += "<p>Your production in shed C is " + data.shedC + " litres per day</p>";
+    document.getElementById("outputData").innerHTML += "<p>Your production in shed D is " + data.shedD + " litres per day</p>";
 
-    document.getElementById("cat1").innerHTML += "<p>Your production in shed 1 is " + data.shed1 + " litres per day</p>";
-    document.getElementById("cat2").innerHTML += "<p>Your production in shed 2 is " + data.shed2 + " litres per day</p>";
-    document.getElementById("cat3").innerHTML += "<p>Your production in shed 3 is " + data.shed3 + " litres per day</p>";
-    document.getElementById("cat4").innerHTML += "<p>Your production in shed 4 is " + data.shed4 + " litres per day</p>";
-
-    document.getElementById("total").innerHTML += "<p>Your total production per day is " + sumData + " litres per day</p>";
-    
+    document.getElementById("outputData").innerHTML += "<p>Your total production per day is " + sumData + " litres per day</p>";
 }

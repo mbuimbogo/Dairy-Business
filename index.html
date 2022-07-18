@@ -22,26 +22,26 @@
 
             <div class="box1">
                 <h2>Production of milk in Litres</h2>
-                <form id="form" action="">
-                    <div class="shed1">
-                        <h3> Shed A Production</h3>
-                        <input id="cat1" type="text" placeholder="Amt. in Litres">
+                <form action="submit" onsubmit="produceReport">
+                    <div id="shed">
+                        <label> ShedA Production</label>
+                        <input id="shedA" type="text" placeholder="Amt. in Litres">
                     </div>
-                    <div class="shed2">
-                        <h3> Shed B Production</h3>
-                        <input id="cat2" type="text" placeholder="Amt. in Litres">
+                    <div id="shed">
+                        <label> ShedB Production</label>
+                        <input id="shedB" type="text" placeholder="Amt. in Litres">
                     </div>
-                    <div class="shed3">
-                        <h3> Shed C Production</h3>
-                        <input id="cat3" type="text" placeholder="Amt. in Litres">
+                    <div id="shed">
+                        <label> ShedC Production</label>
+                        <input id="shedC" type="text" placeholder="Amt. in Litres">
                     </div>
-                    <div class="shed4">
-                        <h3> Shed D Production</h3>
-                        <input id="cat4" type="text" placeholder="Amt. in Litres">
+                    <div id="shed">
+                        <label> ShedD Production</label>
+                        <input id="shedD" type="text" placeholder="Amt. in Litres">
                     </div>
-                    <div class="total"></div>
+                    <!-- <div class="totalProduction"></div> -->
                     <div class="btn">
-                        <button type="submit">Submit</button><span><button type="reset"> Reset</button></span>
+                        <button type="submit">Submit</button> <br><span><button type="reset" onclick="resetPage()"> Reset</button></span>
 
                         <h4 id="total"></h4>
                     </div>
@@ -49,10 +49,10 @@
             </div>
             <div class="box0">
                 <h2>Daily milk Production</h2>
-                <p id="shed1"></p>
-                <p id="shed1"></p>
-                <p id="shed1"></p>
-                <p id="shed1"></p>
+                <p id="outputData"></p>
+                <p id="outputData"></p>
+                <p id="outputData"></p>
+                <p id="outputData"></p>
 
             </div>
             <div class="box2">
@@ -67,7 +67,19 @@
             <div class="boxxx">
                 <h2>Amount Accrued in a leap year</h2>
                 <ul>
-                    <li id="list"></li>
+                    <li id="yearIncome"></li>
+                    <li id="jan"></li>
+                    <li id="feb"></li>
+                    <li id="march"></li>
+                    <li id="april"></li>
+                    <li id="may"></li>
+                    <li id="june"></li>
+                    <li id="july"></li>
+                    <li id="august"></li>
+                    <li id="sep"></li>
+                    <li id="octo"></li>
+                    <li id="nov"></li>
+                    <li id="dec"></li>
                 </ul>
             </div>
         </div>
