@@ -1,38 +1,68 @@
-function produceReport(){
+const price = 45;
 
-    let data = [];
-
-     data[0] = data["shedA"] = parseInt(document.getElementById("shedA").value);
-     data[1] = data["shedB"] = parseInt(document.getElementById("shedB").value);
-     data[2] = data["shedC"] = parseInt(document.getElementById("shedC").value);
-     data[3] = data["shedD"] = parseInt(document.getElementById("shedD").value);
-
-    let sumData = data.shedA + data.shedB + data.shedC + data.shedD;
-
-    document.getElementById("outputData").innerHTML += "<Br>"
-
-    document.getElementById("outputData").innerHTML += "<p>Your production in shed A is " + data.shedA + " litres per day</p>";
-    document.getElementById("outputData").innerHTML += "<p>Your production in shed B is " + data.shedB + " litres per day</p>";
-    document.getElementById("outputData").innerHTML += "<p>Your production in shed C is " + data.shedC + " litres per day</p>";
-    document.getElementById("outputData").innerHTML += "<p>Your production in shed D is " + data.shedD + " litres per day</p>";
-
-    document.getElementById("outputData").innerHTML += "<p>Your total production per day is " + sumData + " litres per day</p>";
-
-    dailyIncome = sumData * 45;
+months = ["January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+]
 
 
-    document.getElementById("outputData").innerHTML += "<p>Your total daily income is Ksh. " + dailyIncome + " </p>";
+function dailyProduction() {
+    const valueShedA = parseInt(document.getElementById("shed-a").value);
+    document.getElementById("ShedA").innerHTML = "Your production in Shed A is " + valueShedA + " litres per day"
+    console.log(valueShedA)
 
-    weeklyIncome = dailyIncome * 7;
+    const valueShedB = parseInt(document.getElementById("shed-b").value);
+    document.getElementById("ShedB").innerHTML = "Your production in Shed B is " + valueShedB + " litres per day"
+    console.log(valueShedB)
 
-    document.getElementById("outputData").innerHTML += "<p>Your total weekly income is Ksh. " + weeklyIncome + " </p>";
+    const valueShedC = parseInt(document.getElementById("shed-c").value);
+    document.getElementById("ShedC").innerHTML = "Your production in Shed C is " + valueShedC + " litres per day"
+    console.log(valueShedC)
+
+    const valueShedD = parseInt(document.getElementById("shed-d").value);
+    document.getElementById("ShedD").innerHTML = "Your production in Shed D is " + valueShedD + " litres per day"
+    console.log(valueShedD)
+
+    const totalProduction = parseInt(valueShedA + valueShedB + valueShedC + valueShedD);
+    document.getElementById("totalDailySheds").innerHTML = "Your production in all sheds is " + totalProduction + " litres per day"
+    console.log(totalProduction)
+
+    const weeklyIncome = totalProduction * 7 * price;
+    document.getElementById("weekly").innerHTML = "Your weekly income will be Ksh " + weeklyIncome;
+
+    const yearlyIncome = totalProduction * 366 * price;
+    document.getElementById("yearlyIncome").innerHTML = "Your yearly income will be Ksh " + yearlyIncome;
+
+    const janIncome = totalProduction * 31 * price;
+    document.getElementById("jan").innerHTML = "Your  January income will be Ksh " + janIncome;
+    const febIncome = totalProduction * 29 * price;
+    document.getElementById("feb").innerHTML = "Your  February income will be Ksh " + febIncome;
+    const marIncome = totalProduction * 31 * price;
+    document.getElementById("mar").innerHTML = "Your  March income will be Ksh " + marIncome;
+    const aprIncome = totalProduction * 30 * price;
+    document.getElementById("apr").innerHTML = "Your April income will be Ksh " + aprIncome;
+    const mayIncome = totalProduction * 31 * price;
+    document.getElementById("may").innerHTML = "Your May income will be Ksh " + mayIncome;
+    const junIncome = totalProduction * 30 * price;
+    document.getElementById("jun").innerHTML = "Your June income will be Ksh " + junIncome;
+    const julIncome = totalProduction * 31 * price;
+    document.getElementById("jul").innerHTML = "Your July income will be Ksh " + julIncome;
+    const augIncome = totalProduction * 31 * price;
+    document.getElementById("aug").innerHTML = "Your August income will be Ksh " + augIncome;
+    const sepIncome = totalProduction * 30 * price;
+    document.getElementById("sep").innerHTML = "Your September income will be Ksh " + sepIncome;
+    const octIncome = totalProduction * 31 * price;
+    document.getElementById("oct").innerHTML = "Your October income will be Ksh " + octIncome;
+    const novIncome = totalProduction * 30 * price;
+    document.getElementById("nov").innerHTML = "Your November income will be Ksh " + novIncome;
+    const decIncome = totalProduction * 31 * price;
+    document.getElementById("dec").innerHTML = "Your December income will be Ksh " + decIncome;
 
 }
+submitButton.addEventListener("click", dailyProduction)
 
 
-function resetPage(){
 
-    document.getElementById("outputData").remove("innerHTML");
-    location.reload();
 
-}
+
